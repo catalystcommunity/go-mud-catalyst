@@ -1,6 +1,6 @@
-# go-mud-catalyst
+# muddycore
 
-The Catalyst Community MUD, made in Go
+The Catalyst Community MUD library, made in Go
 
 This is an experimental core of a MUD meant to be a nice hacking project for a break between more serious projects. It was started by TodPunk as a palate cleanser. The only real goal is to start working towards a simple world that people could chat in, but with support for modern things like being accessible through a web interface through a web socket and getting chat history.
 
