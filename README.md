@@ -6,11 +6,15 @@ This is an experimental core of a MUD meant to be a nice hacking project for a b
 
 ## Current State
 
-Not at all existing or ready.
+We're just getting started. At the moment we're going for a generic message handling and using [CBOR](https://cbor.io/) for the encoding since it's a nice standard binary protocol we don't have to manage types for, but the core messages inside those can be any type as it's just byte array payloads. Convenience and performance.
+
+Prototyping is good. If you are interested in talking about this or other projects, we have a [Discord](https://discord.gg/jhUgW6zmzg)
 
 ## Organization
 
 None. None organization.
+
+Our current thinking is that the pkg dir has all our library stuff which should have all the building blocks for a MUD and will run a server and give client stuff and all that.
 
 ## Contributing
 
@@ -23,3 +27,4 @@ First open an issue with:
 Yes, this is about you doing the work for your request. That's the point of this thing. We will not accept plain feature requests, and we will not accept PRs where a discussion has not happened prior to the PR being opened.
 
 Have at it! (When we have code to have at, of course)
+
