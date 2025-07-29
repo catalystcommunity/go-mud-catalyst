@@ -56,3 +56,7 @@ playwright-report/
 
 muddycore
 scratch/
+
+# LLM Things
+.claude/
+.cursorrules

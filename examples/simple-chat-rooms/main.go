@@ -1,17 +1,17 @@
 package main
 
 import (
-	"log"
 	"os"
 
 	"github.com/catalystcommunity/muddycore/pkg/client"
+	"github.com/catalystcommunity/muddycore/pkg/logging"
 	"github.com/catalystcommunity/muddycore/pkg/server"
 	"github.com/urfave/cli/v2"
 )
 
 func runClient() {
-	c := client.NewClient()
-	c.Run()
+	c := client.NewClient("localhost:7777")
+	c.Connect()
 }
 
 func runServer() {
@@ -44,6 +44,6 @@ func main() {
 	}
 
 	if err := app.Run(os.Args); err != nil {
-		log.Fatal(err)
+		logging.Fatal("Application failed", "error", err)
 	}
 }
